@@ -10,7 +10,7 @@ const http = require("http");
 const server = http.createServer((req, res) => {
     if(req.url === "/contact"){
         res.setHeader("Content-Type", "text/html");
-        res.write("<h1> Have a Project or want to Collaborate? hello sir</h1>");
+        res.write("<h1> Have a Project or want to Collaborate?</h1>");
         res.end()//---> Use for sending thr request
     }
     // if(req.url === "/source-code"){
