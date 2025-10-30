@@ -13,6 +13,7 @@ fs.promises
 .catch((err) => console.log(err));
 
 const filePath1 = __dirname;
+const filePath2 = path.join(__dirname, 'sample.txt');
 
 // fs.promises
 // .readdir(filePath)
@@ -41,6 +42,12 @@ fs.promises
   .unlink(filePath)
   .then(() => console.log("File deleted successfully"))
   .catch((err) => console.log("Error deleting file:", err.message));
+
+fs.promises
+  .unlink(filePath2)
+  .then(() => console.log("File deleted successfully"))
+  .catch((err) => console.log("Error deleting file:", err.message));
+
 
 
 
